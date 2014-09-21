@@ -21,7 +21,7 @@ public class Util {
 	public static void receiceXML() {
 		Socket socket = null;
 		try {
-			 socket = new Socket(ip, 8821);
+			 socket = new Socket(Util.ip, 8821);
 			InputStream in = socket.getInputStream();
 
 			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
