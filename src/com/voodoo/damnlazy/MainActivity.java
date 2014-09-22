@@ -16,7 +16,13 @@ public class MainActivity extends Activity {
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-				Util.receiceXML();
+				try {
+					Util.receiceXML();
+					Util.readXML();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		};
 		
